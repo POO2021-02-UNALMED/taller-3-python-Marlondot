@@ -130,6 +130,24 @@ class Control:
     #Getting TV (although the problem ask for a method "setTv" it's not neccesary because of the "enlazar" method)
     def getTV(self):
         return self._tv
-
+if __name__=="__main__":
+    marca = Marca("Semsung")
+    tv1 = TV(marca, True)
+    tv1.setVolumen(5)
+    tv1.volumenUp()
+    tv2 = TV(marca, False)
+    control = Control()
+    control.enlazar(tv2)
+    print(control.getTV()==tv2)
+    control.turnOn()
+    print(tv2.getEstado())
+    control.volumenUp()
+    print(tv2.getVolumen())
+    tv3 = TV(marca, True)
+    tv3.setVolumen(7)
+    tv3.volumenUp()
+    print(tv1.getVolumen() == 6)
+    print(tv2.getVolumen() == 2)
+    print(tv3.getVolumen() == 7)
 
     

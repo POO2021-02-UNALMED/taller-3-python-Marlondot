@@ -6,27 +6,27 @@ class Control:
     
     #turn methods from TV
     def turnOn(self):
-        self._tv.turnOn
+        self._tv.turnOn()
 
     def turnOff(self):
-        self._tv.turnOff
+        self._tv.turnOff()
     
     #Canal methods from TV
     def setCanal(self,_canal):
         self._tv.setCanal(_canal)
     
     def canalUp(self):
-        self._tv.canalUp
+        self._tv.canalUp()
 
     def canalDown(self):
-        self._tv.canalDown
+        self._tv.canalDown()
     
     #Volumen methods from TV
     def volumenUp(self):
-        self._tv.volumenUp
+        self._tv.volumenUp()
     
     def volumenDown(self):
-        self._tv.volumenDown
+        self._tv.volumenDown()
     
     #Linking control with TV
     def enlazar(self, _tv):
