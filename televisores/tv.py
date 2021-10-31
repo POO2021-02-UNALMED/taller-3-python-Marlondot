@@ -48,11 +48,11 @@ class TV:
     
     #Setting and getting numTv
     @classmethod
-    def setNumTv(cls,_numTV):
+    def setNumTV(cls,_numTV):
         cls._numTV=_numTV
     
     @classmethod
-    def getNumTv(cls):
+    def getNumTV(cls):
         return cls._numTV
     
     #Turning on and off and getting Estado
