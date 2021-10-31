@@ -34,5 +34,5 @@ class Control:
         _tv.setControl(self)
 
     #Getting TV (although the problem ask for a method "setTv" it's not neccesary because of the "enlazar" method)
-    def getTV(self):
+    def getTv(self):
         return self._tv
