@@ -1,4 +1,3 @@
-from .tv import TV
 
 class Control:
     
