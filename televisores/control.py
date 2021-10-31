@@ -12,8 +12,8 @@ class Control:
         self._tv.turnOff
     
     #Canal methods from TV
-    def setCanal(self):
-        self._tv.setCanal
+    def setCanal(self,_canal):
+        self._tv.setCanal(_canal)
     
     def canalUp(self):
         self._tv.canalUp
